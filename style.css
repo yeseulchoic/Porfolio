@@ -5,8 +5,7 @@ body {
 }
 
 img {
-    max-width: 50%;
-    
+    max-width: 80%;
 }
 
 header {
@@ -99,7 +98,6 @@ section {
 
 .profile img {
     width: 400px;
-    margin-top: 50px;
 }
 .fendi {
     width: auto;
@@ -127,9 +125,21 @@ section {
 .work-wrapper img {
     max-height: 400px;
 }
-.work-wrapper p {
-    font-style: italic;
+.work-wrapper a {
+    position: relative;
 }
+.work-wrapper h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    padding: 100px 20px 20px 20px;
+    margin: 0;
+    background: linear-gradient(to top, #000a, #0000);
+    color: white;
+    text-align: start;
+}
+
 
 h2 {
     margin-top: 40px;
@@ -171,5 +181,10 @@ h2 {
 
     .work-wrapper {
         flex-direction: column;
+    }
+    
+    .work-wrapper h2 {
+        padding-top: 40px;
+        font-size: 18px;
     }
 }
